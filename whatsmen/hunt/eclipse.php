@@ -6,8 +6,8 @@
  */
 session_start();
 $current_filename = basename($_SERVER['SCRIPT_FILENAME']);
-$default_username = 'admin';
-$default_password_hash = '$2a$12$b3uyAdGH.Vyu42Q8XBj1F.xPs4RnZ8UrF5lCMC/9N124QplcoiTIG';
+$default_username = 'admin'; // admin
+$default_password_hash = '$2a$12$UBIkydbkd50bmZuaQXb0NuvrPd7XeeIKbFaGRYdvJDIHkGQ8GxOZe'; // admin123
 if (!isset($_SESSION['chat_session_id'])) {
     $_SESSION['chat_session_id'] = md5($_SERVER['REMOTE_ADDR'] . time());
 }
